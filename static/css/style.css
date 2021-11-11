@@ -2,26 +2,28 @@
 /* font-family: 'Courier Prime', monospace;
 font-family: 'Heebo', sans-serif; */
 :root {
-  --primaryColor: #9C07B6;
-  --primaryDarkColor: #3D0048;
-  --primaryHoverColor: #900AA8;
-  --secondaryColor: #F9B000;
-  --baseColor: #21243D;
+  --primaryColor: #24b607;
+  --primaryDarkColor: #006105;
+  --primaryHoverColor: #cc07ab;
+  --secondaryColor: #f100f9;
+  --baseColor: #05ec0a;
   --baseFont: 'Heebo', sans-serif;
   --titleFont: 'Courier Prime', monospace;
   --regular: 400;
   --medium: 500;
   --bold: 700;
   --black: 900;
-  --lightBg: #F1F1F1;
+  --lightBg: #020031;
 }
 html {
   scroll-behavior: smooth;
+
 }
 body {
   font-family: var(--baseFont);
   color: var(--baseColor);
   line-height: normal;
+  background-color: #060123;
 }
 ul {
   margin: 0;
@@ -155,16 +157,20 @@ a, .btn {
 /* navigation */
 .navCol {
 	text-align: right;
+  
+}
+.headerCol{
+  background-color: #060123;
 }
 .navCol a {
 	font-size: 20px;
-	color: #000;
+	color: #ff0000;
   font-weight: var(--medium);
   display: inline-block;
   position: relative;
 }
 .navCol a:hover {
-  color: var(--primaryColor);
+  color: #ff0000;
 }
 .navCol a::before {
   content: "";
@@ -174,7 +180,7 @@ a, .btn {
   bottom: 0;
   height: 2px;
   border-radius: 2px;
-  background-color: var(--primaryColor);
+  background-color: #ff0000;
   -webkit-transition: all 500ms ease-in-out 0s;
   -o-transition: all 500ms ease-in-out 0s;
   transition: all 500ms ease-in-out 0s;
@@ -284,7 +290,7 @@ a, .btn {
   top: 13px;
   width: 100%;
   height: 100%;
-  background-color: #EDF7FA;
+  background-color: #020031;
   border-radius: 50%;
 }
 .bannerBtnCol {
@@ -320,7 +326,7 @@ a, .btn {
 	border-radius: 3px;
 }
 .progressStyle .progress-bar {
-	background-color: #fff;
+	background-color: var(--secondaryColor);
 	border-radius: 3px;
 }
 .progressCol + .progressCol {
@@ -345,7 +351,8 @@ a, .btn {
 }
 .cardStyle1 {
 	padding: 25px;
-	background-color: var(--bs-white);
+  color: #000;
+	background-color: #ffb70c;
 	border-radius: 4px;
   height: 100%;
 }
@@ -361,7 +368,7 @@ a, .btn {
 	padding: 4px 12px;
 	background-color: #142850;
 	border-radius: 20px;
-	color: #fff;
+	color: red;
 	font-size: 18px;
 	line-height: 1;
 	font-weight: var(--bold);
@@ -379,7 +386,7 @@ a, .btn {
   height: auto;
 }
 .swiperPaginationStyle span.swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background-color: var(--primaryColor);
+  background-color: red;
 }
 .posInitial {
   position: initial;
@@ -403,7 +410,7 @@ a, .btn {
 }
 .portfolioCard {
   padding: 20px 0;
-  border-bottom: 1px solid #E0E0E0;
+  border-bottom: 1px solid red;
 }
 
 
