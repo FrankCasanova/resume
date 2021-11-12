@@ -61,7 +61,7 @@ Start Content
   </div>
 </section>
 
-<section>
+{% comment %} <section>
   <div class="sectionSpace pt-0">
     <div class="container">
       <div class="row">
@@ -92,9 +92,9 @@ Start Content
                 <span class="progressLbl">{{sk.name}}</span>
                 <div class="row g-2 align-items-center">
                   <div class="col">
-                    <div class="progress progressStyle">
+                     <div class="progress progressStyle">
                       <div class="progress-bar" role="progressbar" style="width: {{sk.score}}%" aria-valuenow="{{sk.score}}" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
+                    </div> 
                   </div>
                   <div class="col-auto">
                     <span class="pLbl">{{sk.score}}%</span>
@@ -102,7 +102,7 @@ Start Content
                 </div>
               </div>
               {% endif %}
-              {% endfor %}
+              {% endfor %} {% endcomment %}
               
             </div>
           </div>

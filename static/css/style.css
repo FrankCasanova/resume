@@ -3,9 +3,9 @@
 font-family: 'Heebo', sans-serif; */
 :root {
   --primaryColor: #24b607;
-  --primaryDarkColor: #006105;
-  --primaryHoverColor: #cc07ab;
-  --secondaryColor: #f100f9;
+  --primaryDarkColor: #ddf1ff;
+  --primaryHoverColor: #ffb70c;
+  --secondaryColor: #ffb70c;
   --baseColor: #05ec0a;
   --baseFont: 'Heebo', sans-serif;
   --titleFont: 'Courier Prime', monospace;
@@ -13,7 +13,7 @@ font-family: 'Heebo', sans-serif; */
   --medium: 500;
   --bold: 700;
   --black: 900;
-  --lightBg: #020031;
+  --lightBg: #031430;
 }
 html {
   scroll-behavior: smooth;
@@ -23,7 +23,7 @@ body {
   font-family: var(--baseFont);
   color: var(--baseColor);
   line-height: normal;
-  background-color: #060123;
+  background-color:#020016;
 }
 ul {
   margin: 0;
@@ -72,16 +72,16 @@ a, .btn {
 }
 .btnPrimary:hover {
   background-color: var(--primaryDarkColor);
-  color: var(--bs-white);
+  color: #020016;
 }
 .btnOutline {
-	border: 1px solid var(--primaryDarkColor);
-	color: var(--primaryDarkColor);
+	border: 1px solid #24b607;
+	color: #24b607;
 }
 .btnOutline:hover {
 	border: 1px solid var(--primaryDarkColor);
   background-color: var(--primaryDarkColor);
-	color: var(--bs-white);
+	color: #020016;
 }
 .btn:focus {
   outline: none;
@@ -160,17 +160,17 @@ a, .btn {
   
 }
 .headerCol{
-  background-color: #060123;
+  background-color: #020016;
 }
 .navCol a {
 	font-size: 20px;
-	color: #ff0000;
+	color: #24b607;
   font-weight: var(--medium);
   display: inline-block;
   position: relative;
 }
 .navCol a:hover {
-  color: #ff0000;
+  color: #ddf1ff;
 }
 .navCol a::before {
   content: "";
@@ -180,7 +180,7 @@ a, .btn {
   bottom: 0;
   height: 2px;
   border-radius: 2px;
-  background-color: #ff0000;
+  background-color: #ddf1ff;
   -webkit-transition: all 500ms ease-in-out 0s;
   -o-transition: all 500ms ease-in-out 0s;
   transition: all 500ms ease-in-out 0s;
@@ -290,7 +290,7 @@ a, .btn {
   top: 13px;
   width: 100%;
   height: 100%;
-  background-color: #020031;
+  background-color: #031430;
   border-radius: 50%;
 }
 .bannerBtnCol {
@@ -351,8 +351,8 @@ a, .btn {
 }
 .cardStyle1 {
 	padding: 25px;
-  color: #000;
-	background-color: #ffb70c;
+  color: #b40406;
+	background-color: #ddf1ff;
 	border-radius: 4px;
   height: 100%;
 }
@@ -469,6 +469,7 @@ body.navToggleActive {
 .footerCol {
   padding: 50px 0;
   text-align: center;
+  background-color:#ddf1ff;
 }
 .socialCol li {
   display: inline-block;
@@ -485,6 +486,7 @@ body.navToggleActive {
 .copyrightCol {
 	padding: 20px 0 0;
   font-size: 14px;
+  color: black;
 }
 .copyrightCol p {
 	margin: 0;
