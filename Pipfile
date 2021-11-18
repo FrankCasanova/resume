@@ -11,6 +11,9 @@ asgiref = "*"
 django-js-asset = "*"
 pytz = "*"
 sqlparse = "*"
+psycopg2-binary = "*"
+django-storages = "*"
+boto3 = "*"
 
 [dev-packages]
 

@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'main',
     
     #thirt party
-    'ckeditor'
+    'ckeditor',
+    'storages',
 ]
 
 MIDDLEWARE = [
@@ -82,8 +83,12 @@ WSGI_APPLICATION = 'configurations.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': "resume-django",
+        'USER': "postgres",
+        'PASSWORD': "postgres",
+        'HOST': "localhost",
+        'PORT': "5432",  # 5432 by default
     }
 }
 
@@ -124,18 +129,38 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-    os.path.join(BASE_DIR, 'media')
-]
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, 'static'),
+#     os.path.join(BASE_DIR, 'media')
+# ]
 
-STATIC_URL = "/static/"
-STATIC_ROOT = BASE_DIR / "staticfiles"
+# STATIC_URL = "/static/"
+# STATIC_ROOT = BASE_DIR / "staticfiles"
 
-MEDIA_URL = "/media/"
-MEDIA_ROOT = BASE_DIR / "mediafiles"
+# MEDIA_URL = "/media/"
+# MEDIA_ROOT = BASE_DIR / "mediafiles"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+#s3 buckets config
+AWS_ACCESS_KEY_ID = 'AKIAWD5JVYOBB6IST6C3'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'franky-resume-django'
+AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
+AWS_S3_OBJECT_PARAMETERS = {'CacheControl': 'max-age=86400'}
+AWS_DEFAULT_ACL = 'public-read'
+
+AWS_LOCATION = 'static'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
+
+STATIC_URL = 'https://%s/%s/' % (AWS_S3_CUSTOM_DOMAIN, AWS_LOCATION)
+STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+DEFAULT_FILE_STORAGE = 'configurations.storages.MediaStore'
+
+
