@@ -2,7 +2,7 @@
 /* font-family: 'Courier Prime', monospace;
 font-family: 'Heebo', sans-serif; */
 :root {
-  --primaryColor: #24b607;
+  --primaryColor: #05ec0a;
   --primaryDarkColor: #ddf1ff;
   --primaryHoverColor: #ffb70c;
   --secondaryColor: #ffb70c;
@@ -75,8 +75,8 @@ a, .btn {
   color: #020016;
 }
 .btnOutline {
-	border: 1px solid #24b607;
-	color: #24b607;
+	border: 1px solid #05ec0a;
+	color: #05ec0a;
 }
 .btnOutline:hover {
 	border: 1px solid var(--primaryDarkColor);
@@ -164,7 +164,7 @@ a, .btn {
 }
 .navCol a {
 	font-size: 20px;
-	color: #24b607;
+	color: #05ec0a;
   font-weight: var(--medium);
   display: inline-block;
   position: relative;
@@ -220,7 +220,7 @@ a, .btn {
 	-webkit-transition: background-color 500ms ease-in-out 250ms;
   -o-transition: background-color 500ms ease-in-out 250ms;
   transition: background-color 500ms ease-in-out 250ms;
-	background-color: #000;
+	background-color:#24b607;
 	border: 1px solid rgba(0,0,0,0.2);
   margin-left: auto;
 }
@@ -233,7 +233,7 @@ a, .btn {
   display: block;
   width: 18px;
   height: 2px;
-  background-color: #000;
+  background-color: #24b607;
   -webkit-transition: transform 500ms ease-in-out;
   -o-transition: transform 500ms ease-in-out;
   transition: transform 500ms ease-in-out;
@@ -248,7 +248,7 @@ a, .btn {
   display: none;
 }
 .navToggleActive .navToggle {
-  background-color: rgba(255, 255, 255, 0);
+  background-color:#24b607;
   transition-delay: 0s;
 }
 .navToggleActive .navToggle:before {
@@ -352,7 +352,7 @@ a, .btn {
 .cardStyle1 {
 	padding: 25px;
   color: black;
-	background-color: #24b607;
+	background-color: #05ec0a;
 	border-radius: 4px;
   height: 100%;
 }
@@ -625,7 +625,7 @@ body.navToggleActive {
     bottom: 0;
     width: 230px;
     padding: 20px;
-    background: var(--primaryDarkColor);
+    background: #031430;
     z-index: 99;
     -webkit-transform: translateX(-100%);
     -ms-transform: translateX(-100%);
@@ -656,7 +656,7 @@ body.navToggleActive {
   }
   .navCol a {
   	font-size: 16px;
-    color: var(--bs-white);
+    color:#05ec0a;
   }
 
   .bannerUserImg {

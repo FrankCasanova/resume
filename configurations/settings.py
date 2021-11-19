@@ -83,14 +83,20 @@ WSGI_APPLICATION = 'configurations.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': "resume-django",
-        'USER': "postgres",
-        'PASSWORD': "postgres",
-        'HOST': "localhost",
-        'PORT': "5432",  # 5432 by default
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': "resume-django",
+#         'USER': "postgres",
+#         'PASSWORD': "postgres",
+#         'HOST': "localhost",
+#         'PORT': "5432",  # 5432 by default
+#     }
+# }
 
 
 # Password validation
